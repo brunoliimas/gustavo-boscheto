@@ -6,11 +6,11 @@ export default function Masthead() {
         <section className="w-full h-screen">
             <div className="container w-full h-full flex items-center">
                 <div className="w-full pt-32 pb-16 relative">
-                    <h1 className="text-8xl">
+                    <h1 className="text-9xl">
                         <span className="block font-thin">Gustavo</span>
                         <span className="block font-medium ml-20">Boscheto</span>
-                        <span className="block font-thin">Arquiteto</span>
-                        <span className="block font-medium">&#174;2023</span>
+                        <span className="block font-thin text-6xl">Arquiteto</span>
+                        <span className="block font-medium text-6xl ml-40">&#174;2023</span>
                     </h1>
                     <div className="absolute top-0 left-0 -z-10 w-full h-full flex items-center justify-end">
                         <Image
