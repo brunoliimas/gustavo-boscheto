@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header className="w-full">
             <div className="container">
-                <div className="py-10 px-6 xl:px-0 flex items-start justify-between border-b border-b-black font-medium">
+                <div className="py-10 px-4 xl:px-0 flex items-start justify-between border-b border-b-black font-medium">
                     <div className="flex items-end">
                         <Link
                             href="/">
@@ -22,29 +22,29 @@ export default function Header() {
                     <nav className="flex flex-col gap-2 text-xl transition-all duration-500">
                         <Link
                             className="hover:underline hover:text-slate-700"
-                            href="/">
+                            href="#home">
                             Home
                         </Link>
                         <Link
                             className="hover:underline hover:text-slate-700"
-                            href="/about">
+                            href="#about">
                             Sobre
                         </Link>
                         <Link
                             className="hover:underline hover:text-slate-700"
-                            href="/projects">
+                            href="#projects">
                             Projetos
                         </Link>
                         <Link
                             className="hover:underline hover:text-slate-700"
-                            href="/experience">
+                            href="#experiences">
                             Experiências
                         </Link>
                     </nav>
                     <div>
                         <Link
                             className="text-2xl"
-                            href="/contact">
+                            href="#contact">
                             Contato
                         </Link>
                     </div>

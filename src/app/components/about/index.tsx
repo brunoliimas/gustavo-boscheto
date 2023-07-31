@@ -3,10 +3,10 @@ import { Title } from "../ui/title"
 
 export default function About() {
     return (
-        <section className="w-full my-20">
+        <section id="about" className="w-full my-20">
             <div className="container">
                 <Title title="Sobre" />
-                <div className="w-full flex flex-col md:flex-row">
+                <div className="w-full flex flex-col md:flex-row overflow-x-hidden">
                     <div className="flex flex-col lg:flex-row items-center py-6 sm:p-10 border-r border-t border-black w-full md:w-1/2 relative">
                         <Image
                             className="w-2/5 lg:w-1/5 rounded-full mb-4 lg:m-0"

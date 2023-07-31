@@ -3,6 +3,7 @@ import Masthead from './components/masthead'
 import About from './components/about'
 import Projects from './components/projects'
 import Experiences from './components/experiences'
+import Contact from './components/contact'
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Projects />
       <Experiences />
+      <Contact />
     </>
   )
 }

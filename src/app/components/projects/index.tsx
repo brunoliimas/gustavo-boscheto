@@ -4,7 +4,7 @@ import { Tabs } from "./tabs"
 
 export default function Projects() {
     return (
-        <section className="w-full my-20">
+        <section id="projects" className="w-full my-20">
             <div className="container">
                 <Title title="Projetos" />
                 <Tabs />
