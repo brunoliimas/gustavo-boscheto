@@ -56,7 +56,7 @@ export const Tabs = () => {
                                 <h1 className="text-2xl md:text-4xl font-bold">
                                     {tab.title}
                                 </h1>
-                                <p className="text-base truncate">
+                                <p className="text-base">
                                     {tab.text}
                                 </p>
                                 <div className="flex items-center justify-start space-x-4">
