@@ -1,8 +1,8 @@
-import { gsap, TweenTarget  } from "gsap";
-import { CSSPlugin } from "gsap/CSSPlugin";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { gsap, TweenTarget  } from "gsap";
+// import { CSSPlugin } from "gsap/CSSPlugin";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
-gsap.registerPlugin(ScrollTrigger, CSSPlugin);
+// gsap.registerPlugin(ScrollTrigger, CSSPlugin);
 
-export { gsap, ScrollTrigger, TweenTarget };
+// export { gsap, ScrollTrigger, TweenTarget };

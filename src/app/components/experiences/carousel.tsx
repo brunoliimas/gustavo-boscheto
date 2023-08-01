@@ -3,7 +3,9 @@
 import Image from "next/image"
 
 import { useEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "../../../../public/gsap";
+
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,33 +17,14 @@ export const Carousel = () => {
     const jobRef = useRef(null);
 
 
-
-    // useEffect(() => {
-    //     const tlExperience = gsap.timeline();
-    //     tlExperience
-    //     gsap.from(yearRef.current, {
-    //         duration: 2,
-    //         yPercent: 100,
-    //         ease: "ease",
-    //         scrollTrigger: {
-    //           trigger: yearRef.current,
-    //           start: "top 100%", // Start the animation when the element is 90% from the top of the viewport
-    //           end: "top 10%", // End the animation when the element is 10% from the top of the viewport
-    //           scrub: 1, // Smoothly animate the position during scroll
-    //         },
-    //       });
-    // }, []);
-
     useEffect(() => {
         const scrollTriggerOptions = {
             trigger: experiencesRef.current,
             start: "-500px",
-            scrub: 1.5,
         };
         gsap.to(yearRef.current, {
             scrollTrigger: scrollTriggerOptions,
             xPercent: -58,
-            scrub: 1.5, // Smoothly animate the position during scroll
         });
         gsap.to(jobRef.current, {
             scrollTrigger: scrollTriggerOptions,
