@@ -10,7 +10,7 @@ export default function About() {
                     <div className="flex flex-col lg:flex-row items-center py-6 sm:p-10 border-r border-t border-black w-full md:w-1/2 relative">
                         <Image
                             className="w-2/5 lg:w-1/5 rounded-full mb-4 lg:m-0"
-                            src='/avatar.jpg'
+                            src='/about/avatar.jpg'
                             width={100}
                             height={100}
                             alt="Avatar"
