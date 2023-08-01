@@ -55,7 +55,7 @@ export const Carousel = () => {
                     <div className="p-6 flex flex-col gap-10 lg:flex-row border-b border-black">
                         <div className="flex items-center lg:flex-col">
                             <Image
-                                src='/about/avatar.jpg'
+                                src='/about/star.svg'
                                 width={100}
                                 height={100}
                                 alt="Empresa"
