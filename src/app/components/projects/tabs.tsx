@@ -7,23 +7,23 @@ import { TabButton, Button } from "../ui/buttons";
 const tabsContents = [
     {
         id: 1,
-        title: "Projeto 01",
-        text: "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control e your favourite sites.",
-        URLImage: "/projects/project-01.jpg",
+        title: "Coworking + Centro Gastronômico",
+        text: `A região do 4° distrito em Porto Alegre-RS, conhecida como a "zona velha", tem imóveis em situação precária e abandonados. O objetivo é requalificar tipologias industriais remanescentes e revitalizar a área, utilizando um antigo galpão dos Correios como um novo ponto gastronômico na cidade. O projeto busca criar um ponto de referência tecnológica e gastronômica no bairro São Geraldo, com uma arquitetura contemporânea e sustentável. O objetivo é trazer leveza e movimento para a região, criando novos espaços urbanos de qualidade e promovendo encontros para a comunidade em geral.`,
+        URLImage: "/projects/coworking.png",
         hrefLink: "/"
     },
     {
         id: 2,
-        title: "Projeto 02",
-        text: "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
-        URLImage: "/projects/project-02.jpg",
+        title: "Mercado Público De Canoas",
+        text: `O Mercado Público localizado no município de Canoas, RS, com uma arquitetura contemporânea que chama a atenção. Sendo próximo à capital do estado, o mercado atrai investimentos no setor de infraestrutura e comércio, com grande potencial a ser explorado. A estrutura é composta por um grande prisma, com pilares em formato de "X" em madeira laminada colada e fechamentos em vidro, contrastando com um volume bruto de concreto armado que abriga os serviços do mercado.`,
+        URLImage: "/projects/mercado-publico-canoas.png",
         hrefLink: "/"
     },
     {
         id: 3,
-        title: "Projeto 03",
-        text: "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
-        URLImage: "/projects/project-03.jpg",
+        title: "A Praça",
+        text: "   Canoas, e principalmente a região central da cidade tem poucos locais de convivência, praças públicas. Pensando em resolver essa problemática, foi projetado uma espaço multiuso, aberto, que pode ser usado para feiras e eventos itinerantes.",
+        URLImage: "/projects/praca.png",
         hrefLink: "/"
     }
 ]
@@ -56,7 +56,7 @@ export const Tabs = () => {
                                 <h1 className="text-2xl md:text-4xl font-bold">
                                     {tab.title}
                                 </h1>
-                                <p className="text-base">
+                                <p className="text-base truncate">
                                     {tab.text}
                                 </p>
                                 <div className="flex items-center justify-start space-x-4">
