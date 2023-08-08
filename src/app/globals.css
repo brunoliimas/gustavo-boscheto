@@ -13,6 +13,22 @@ scroll-behavior: smooth;}
 body {
   background-color: #faf5f0;
 }
+
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: none;
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
+  border-radius: 2px;
+}
+
 /* Customize the carousel height as needed */
 .slick-slider {
   height: 500px;

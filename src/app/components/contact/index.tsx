@@ -12,20 +12,20 @@ export default function Contact() {
                 <Title title="Contato" />
                 <div className="px-4 lg:px-0">
                     <div className="p-6 grid grid-cols-1 gap-8 md:grid-cols-3 border border-black rounded-3xl">
-                        <div className="bg-emerald-200">
+                        <div className="">
                             <Link href="/">
                                 <Image
-                                    src="/logo-gustavo.svg"
+                                    src="/logo-gustavo_alt.svg"
                                     alt="Gustavo Bosqueto"
                                     width={100}
                                     height={50}
                                 />
                             </Link>
                         </div>
-                        <div className="bg-emerald-200">
+                        <div className="">
                             Menu
                         </div>
-                        <div className="bg-emerald-200">
+                        <div className="">
                             <h3 className="font-medium text-lg">Contato</h3>
                             <div className="flex flex-wrap items-center gap-4 pt-4">
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">

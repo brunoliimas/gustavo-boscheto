@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Masthead() {
     return (
-        <section id="home" className="w-full my-40">
+        <section className="w-full my-40">
             <div className="container w-full h-full flex items-center">
                 <div className="w-full relative px-4 lg:px-0">
                     <h1 className="">
