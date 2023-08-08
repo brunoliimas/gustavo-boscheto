@@ -6,6 +6,8 @@ export default function About() {
         <section id="about" className="w-full my-20">
             <div className="container">
                 <Title title="Sobre" />
+            </div>
+            <div className="container px-0">
                 <div className="w-full flex flex-col md:flex-row overflow-x-hidden">
                     <div className="flex flex-col lg:flex-row items-center py-6 sm:p-10 border-r border-t border-black w-full md:w-1/2 relative">
                         <Image

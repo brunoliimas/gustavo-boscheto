@@ -41,18 +41,18 @@ export const Tabs = () => {
                 {tabsContents.map((tab) => (
                     <div
                         key={tab.id}
-                        className={`container w-full relative ${activeTab === tab.id ? "" : "hidden"}`}>
+                        className={`container relative flex flex-col ${activeTab === tab.id ? "" : "hidden"}`}>
                         <div className="w-full max-h-[700px] overflow-hidden flex items-center justify-center rounded-3xl border border-black">
                             <Image
                                 className="w-full object-cover"
                                 src={tab.URLImage}
-                                width={400}
-                                height={266}
+                                width={1000}
+                                height={866}
                                 alt="Imagem hero"
                             />
                         </div>
-                        <div className="w-full flex justify-center items-center md:grid grid-cols-none md:grid-cols-2 md:gap-4 md:absolute md:-bottom-8 xl:-bottom-10 md:right-10">
-                            <div className="flex flex-col md:col-start-2 bg-white p-10 gap-4 border border-black rounded-3xl">
+                        <div className="w-full flex justify-center items-center lg:grid lg:grid-cols-2 lg:gap-4 lg:absolute lg:-bottom-8 xl:-bottom-10 lg:right-10">
+                            <div className="flex flex-col md:col-start-2 bg-white lg:bg-opacity-90 p-10 gap-4 border border-black rounded-3xl">
                                 <h1 className="text-2xl md:text-4xl font-bold">
                                     {tab.title}
                                 </h1>
