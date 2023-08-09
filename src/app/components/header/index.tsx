@@ -30,8 +30,8 @@ export default function Header() {
 
     return (
         <header className="w-full">
-            <div className="container">
-                <div className="py-6 px-4 xl:px-0 flex items-center justify-between border-b border-b-black font-medium">
+            <div className="container px-0">
+                <div className="px-4 xl:px-0 flex items-center justify-between border-b border-b-black font-medium overflow-hidden">
                     <div className="flex items-end">
                         <Link
                             href="/">
@@ -47,20 +47,27 @@ export default function Header() {
                     <nav className="hidden md:flex items-center gap-x-6">
                         {links.map((link, index) => (
                             <Link key={index}
-                                className="text-xl capitalize hover:text-slate-600 transition-all duration-300"
+                                className="text-xl capitalize hover:text-neutral-600 hover:underline transition-all duration-300"
                                 href={link.href}
                             >
                                 {link.name}
                             </Link>
                         ))}
                     </nav>
-                    <button className={`bg-black p-2 text-white md:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={toggleMenu}>
-                        <AiOutlineMenu size={30} />
-                    </button>
                     {menuOpen && <Menu onClose={toggleMenu} />}
-                    <div className="hidden md:block">
+                    <div className=" relative border-l border-black pl-8 md:px-8 py-10">
+                        <Image
+                            className="absolute -bottom-[25px] -left-[25px]"
+                            src="/about/star.svg"
+                            width={50}
+                            height={50}
+                            alt="star"
+                        />
+                        <button className={`bg-black p-2 text-white md:hidden ${menuOpen ? 'hidden' : 'block'}`} onClick={toggleMenu}>
+                            <AiOutlineMenu size={30} />
+                        </button>
                         <Link
-                            className="text-2xl font-bold"
+                            className="text-2xl font-bold hidden md:block hover:text-neutral-600 hover:underline transition-all duration-300"
                             href="#contato">
                             Contato
                         </Link>
