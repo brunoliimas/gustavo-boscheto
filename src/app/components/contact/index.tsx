@@ -15,10 +15,10 @@ export default function Contact() {
                         <div className="flex justify-center md:justify-start">
                             <Link href="/">
                                 <Image
-                                    src="/logo-gustavo_alt.svg"
+                                    src="/logo-gustavo_alt_2.svg"
                                     alt="Gustavo Bosqueto"
-                                    width={100}
-                                    height={50}
+                                    width={180}
+                                    height={73.3}
                                 />
                             </Link>
                         </div>

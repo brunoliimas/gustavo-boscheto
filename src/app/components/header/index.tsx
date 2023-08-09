@@ -31,15 +31,15 @@ export default function Header() {
     return (
         <header className="w-full">
             <div className="container px-0">
-                <div className="px-4 xl:px-0 flex items-center justify-between border-b border-b-black font-medium overflow-hidden">
+                <div className="px-4 flex items-center justify-between border-b border-b-black font-medium overflow-hidden">
                     <div className="flex items-end">
                         <Link
                             href="/">
                             <Image
                                 className=""
-                                src='/logo-gustavo_alt.svg'
-                                width={100}
-                                height={100}
+                                src='/logo-gustavo_alt_2.svg'
+                                width={180}
+                                height={73.3}
                                 alt="Logo Gustavo"
                             />
                         </Link>

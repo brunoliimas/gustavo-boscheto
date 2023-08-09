@@ -3,10 +3,10 @@ import Image from "next/image"
 
 export default function Masthead() {
     return (
-        <section className="w-full">
+        <section className="w-full py-20">
             <div className="container">
                 <div className="relative w-full flex flex-col px-4 lg:px-0">
-                    <h1 className="py-20 px-4 ">
+                    <h1 className="py-20 px-4">
                         <span className="block font-thin text-5xl sm:text-7xl md:text-9xl">Gustavo</span>
                         <span className="block font-medium text-5xl sm:text-7xl md:text-9xl ml-10 md:ml-20">Boscheto</span>
                         <span className="block font-thin text-3xl md:text-6xl">Arquiteto</span>
@@ -23,11 +23,13 @@ export default function Masthead() {
                             alt="Hero 01"
                         /> */}
                         <Image
+                            className=""
                             src='/masthead/bg-masthead.svg'
-                            width={654}
-                            height={354}
+                            width={1000}
+                            height={1000}
                             alt="Hero 01"
                         />
+                        <small className="absolute text-[8px] sm:text-sm right-0 bottom-0">Imagem de archjoe no Freepik</small>
                     </div>
                 </div>
             </div>
