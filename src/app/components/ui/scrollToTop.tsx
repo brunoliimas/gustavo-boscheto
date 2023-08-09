@@ -54,7 +54,7 @@ export const ScrollToTopButton = ({ containerRef }: ScrollToTopButtonProps) => {
         <button
             ref={scrollToTopRef}
             className={`${isVisible ? 'block' : 'hidden'
-                } fixed z-50 bottom-6 right-6 p-4 bg-neutral-800 text-white shadow-xl`}
+                } fixed z-40 bottom-6 right-6 p-4 bg-neutral-800 text-white shadow-xl`}
             onClick={scrollToTop}
         >
             <BiSolidUpArrow size={30} />
