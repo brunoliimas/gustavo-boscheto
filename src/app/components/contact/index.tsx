@@ -12,7 +12,7 @@ export default function Contact() {
                 <Title title="Contato" />
                 <div className="px-4 lg:px-0">
                     <div className="p-6 grid grid-cols-1 gap-8 md:grid-cols-3 border border-black rounded-3xl">
-                        <div className="">
+                        <div className="flex justify-center md:justify-start">
                             <Link href="/">
                                 <Image
                                     src="/logo-gustavo_alt.svg"
@@ -29,19 +29,19 @@ export default function Contact() {
                             <h3 className="font-medium text-lg">Contato</h3>
                             <div className="flex flex-wrap items-center gap-4 pt-4">
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedin size={24} />
+                                    <FaLinkedin size={30} />
                                 </a>
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">
-                                    <FaWhatsappSquare size={24} />
+                                    <FaWhatsappSquare size={30} />
                                 </a>
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">
-                                    <FaInstagramSquare size={24} />
+                                    <FaInstagramSquare size={30} />
                                 </a>
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">
-                                    <FaBehanceSquare size={24} />
+                                    <FaBehanceSquare size={30} />
                                 </a>
                                 <a className="hover:text-neutral-700" href="http://" target="_blank" rel="noopener noreferrer">
-                                    <MdEmail size={24} />
+                                    <MdEmail size={30} />
                                 </a>
                             </div>
                         </div>

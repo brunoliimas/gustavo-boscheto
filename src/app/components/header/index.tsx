@@ -37,7 +37,7 @@ export default function Header() {
                             href="/">
                             <Image
                                 className=""
-                                src='/logo-gustavo_alt_1.svg'
+                                src='/logo-gustavo_alt.svg'
                                 width={100}
                                 height={100}
                                 alt="Logo Gustavo"

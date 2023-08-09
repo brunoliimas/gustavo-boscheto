@@ -37,11 +37,11 @@ export const Tabs = () => {
 
     return (
         <>
-            <div className="w-full flex flex-col items-start justify-center px-4 lg:px-0">
+            <div className="w-full flex flex-col items-start justify-center lg:px-0">
                 {tabsContents.map((tab) => (
                     <div
                         key={tab.id}
-                        className={`container relative flex flex-col ${activeTab === tab.id ? "" : "hidden"}`}>
+                        className={`w-full relative flex flex-col ${activeTab === tab.id ? "" : "hidden"}`}>
                         <div className="w-full max-h-[700px] overflow-hidden flex items-center justify-center rounded-3xl border border-black">
                             <Image
                                 className="w-full object-cover"
