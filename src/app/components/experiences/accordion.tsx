@@ -11,6 +11,8 @@ interface Work {
     exit: string;
     description: string;
     urlImg: string;
+    isOpen: boolean;
+    toggleAccordion: () => void;
 }
 const works = [
     {
@@ -42,12 +44,7 @@ const works = [
     },
 ]
 
-const AccordionItem = ({ companyName, occupation, level, entry, exit, description, urlImg }: Work) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleAccordion = () => {
-        setIsOpen(!isOpen);
-    };
+const AccordionItem = ({ companyName, occupation, level, entry, exit, description, urlImg, isOpen, toggleAccordion }: Work) => {
 
     return (
         <div className="border-t border-black py-4">
@@ -92,7 +89,9 @@ const AccordionItem = ({ companyName, occupation, level, entry, exit, descriptio
     );
 };
 
-export const ExperienceAccordion= () => {
+export const ExperienceAccordion = () => {
+    const [openIndex, setOpenIndex] = useState(-1);
+
     return (
         <div className="accordion">
             {works.map((work, index) => (
@@ -105,6 +104,8 @@ export const ExperienceAccordion= () => {
                     exit={work.exit}
                     description={work.description}
                     urlImg={work.urlImg}
+                    isOpen={index === openIndex}
+                    toggleAccordion={() => setOpenIndex(index === openIndex ? -1 : index)}
                 />
             ))}
         </div>
