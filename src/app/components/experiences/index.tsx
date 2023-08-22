@@ -1,7 +1,6 @@
 'use client'
-
 import { Title } from '../ui/title';
-import { Carousel } from './carousel';
+import { ExperienceAccordion } from './accordion';
 
 export default function Experiences() {
 
@@ -11,8 +10,8 @@ export default function Experiences() {
         <section id="experiences" className="w-full my-20">
             <div className="container">
                 <Title title="Experiências" />
+                <ExperienceAccordion />
             </div>
-            <Carousel />
         </section>
     );
 }

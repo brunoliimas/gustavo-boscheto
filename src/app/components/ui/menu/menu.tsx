@@ -29,6 +29,7 @@ export const Menu = ({ onClose }: MenuProps) => {
                 {links.map((link, index) => (
                     <li key={index} className="py-4 px-2 border-b border-b-neutral-800">
                         <Link
+                            onClick={onClose}
                             className="text-white font-light capitalize text-lg transition-all duration-300"
                             href={link.href}
                         >

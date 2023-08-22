@@ -3,6 +3,7 @@ import { Title } from "../ui/title"
 import Link from "next/link"
 import { MdEmail } from 'react-icons/md'
 import { FaWhatsappSquare, FaLinkedin, FaInstagramSquare, FaBehanceSquare } from 'react-icons/fa'
+import { links } from "../ui/menu/links"
 
 
 export default function Contact() {
@@ -22,9 +23,17 @@ export default function Contact() {
                                 />
                             </Link>
                         </div>
-                        <div className="">
-                            Menu
-                        </div>
+                        <nav className="flex flex-col gap-2 capitalize text-xl">
+                            {links.map((link, index) => (
+                                <Link
+                                    className="hover:text-neutral-600 hover:underline transition-all duration-300"
+                                    key={index}
+                                    href={link.href}
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </nav>
                         <div className="">
                             <h3 className="font-medium text-lg">Contato</h3>
                             <div className="flex flex-wrap items-center gap-4 pt-4">
