@@ -42,7 +42,7 @@ export const Tabs = () => {
                     <div
                         key={tab.id}
                         className={`w-full relative flex flex-col ${activeTab === tab.id ? "" : "hidden"}`}>
-                        <div className="w-full max-h-[700px] overflow-hidden flex items-center justify-center rounded-3xl border border-black">
+                        <div className="w-full max-h-[500px] overflow-hidden flex items-center justify-center rounded-3xl border border-black">
                             <Image
                                 className="w-full object-cover"
                                 src={tab.URLImage}
@@ -56,7 +56,7 @@ export const Tabs = () => {
                                 <h1 className="text-2xl md:text-4xl font-bold">
                                     {tab.title}
                                 </h1>
-                                <p className="text-base">
+                                <p className="text-base line-clamp-3">
                                     {tab.text}
                                 </p>
                                 <div className="flex items-center justify-start space-x-4">

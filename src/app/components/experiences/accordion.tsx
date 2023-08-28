@@ -37,7 +37,7 @@ const works = [
     {
         companyName: "Bela Vista Cortinas",
         occupation: "Consultor de Vendas",
-        level: "Júnior",
+        level: "Pleno",
         entry: "Agosto de 2018",
         exit: "Novembro de 2021",
         description: "Ampla experiência em atendimento ao público, realizando levantamentos in loco, elaboração de orçamentos e condução de vendas, incluindo pós-venda. Especializado em vendas de produtos de alta qualidade, como cortinas Hunter Douglas, alcançando um notável marco de mais de R$100.000,00 em vendas durante um único mês.",
